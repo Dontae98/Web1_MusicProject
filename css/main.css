@@ -98,6 +98,83 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.bruno{
+  width: 100%;
+  background-color: #981414;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bruno h1{
+color: #fff;
+font-size: 64px;
+font-family: 'Anton', sans-serif;
+
+
+}
+
+
+.about{
+ width: 100%;
+ background-color: #AC2222;
+ height: 59px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.about h1{
+color: #fff;
+font-size: 24px;
+font-family: 'Anton', sans-serif;
+
+
+}
+
+
+.tour{
+ width: 100%;
+ background-color: #ECA823;
+ height: 70px;
+ display: flex;
+ justify-content: center;
+ align-content: center;
+}
+
+.tour h1{
+  color: #fff;
+  font-size: 24px;
+  font-family: 'Anton', sans-serif;
+
+
+}
+
+.testimonials{
+  width: 100%;
+  background-color: #000000;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.testimonials h1{
+  color: #fff;
+  font-size: 24px;
+  font-family: 'Anton', sans-serif;
+
+}
+
+.footer{
+  width: 100%;
+  background-color: #981414;
+  height: 41px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -263,4 +340,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
