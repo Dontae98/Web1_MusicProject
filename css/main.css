@@ -124,18 +124,42 @@ textarea {
 color: #fff;
 font-size: 64px;
 font-family: 'Anton', sans-serif;
-
-
 }
+
+
 
 
 .about{
  width: 100%;
  background-color: #AC2222;
- height: 70px;
+ height: 300px;
  display: flex;
  justify-content: center;
  align-items: center;
+ flex-direction: row;
+}
+
+.leftsidebar,
+.rightsidebar{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.maincontent{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.maincontent p{
+ color: #fff;
+ font-size: 10px;
+ font-family: 'Anton', sans-serif;
 }
 
 .about h1{
@@ -150,7 +174,7 @@ font-family: 'Anton', sans-serif;
 .tour{
  width: 100%;
  background-color: #ECA823;
- height: 70px;
+ height: 200px;
  display: flex;
  justify-content: center;
  align-content: center;
@@ -167,7 +191,7 @@ font-family: 'Anton', sans-serif;
 .testimonials{
   width: 100%;
   background-color: #1D1B1B;
-  height: 70px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -177,7 +201,29 @@ font-family: 'Anton', sans-serif;
   color: #fff;
   font-size: 24px;
   font-family: 'Anton', sans-serif;
+}
 
+.leftsidebar,
+.rightsidebar{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.maincontent{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.maincontent p{
+  color: #fff;
+  font-size: 10px;
+  font-family: 'Anton', sans-serif;
 }
 
 .footer{
