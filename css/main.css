@@ -168,6 +168,11 @@
     font-family: 'Anton', sans-serif;
   }
 
+ .table{
+   color: #fff;
+   font-size: 10px;
+   font-family: 'Anton', sans-serif;
+ }
   .tour {
     width: 100%;
     background-color: #ECA823;
@@ -187,6 +192,7 @@
     font-family: 'Anton', sans-serif;
   }
 
+
   .testimonials {
     width: 100%;
     background-color: #1D1B1B;
@@ -199,6 +205,12 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  .tourdates {
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Anton', sans-serif;
+}
 
   .hero_one{
     background-color: rgba(121, 23, 23, 0.78);
