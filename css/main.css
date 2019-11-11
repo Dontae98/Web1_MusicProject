@@ -17,7 +17,7 @@
     font-size: 1em;
     line-height: 1.4;
   }
-  
+
   /*
    * Remove text-shadow in selection highlight:
    * https://twitter.com/miketaylr/status/12228805301
@@ -27,21 +27,21 @@
    *
    * Customize the background color to match your design.
    */
-  
+
   ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
   }
-  
+
   ::selection {
     background: #b3d4fc;
     text-shadow: none;
   }
-  
+
   /*
    * A better looking default horizontal rule
    */
-  
+
   hr {
     display: block;
     height: 1px;
@@ -50,13 +50,13 @@
     margin: 1em 0;
     padding: 0;
   }
-  
+
   /*
    * Remove the gap between audio, canvas, iframes,
    * images, videos and the bottom of their containers:
    * https://github.com/h5bp/html5-boilerplate/issues/440
    */
-  
+
   audio,
   canvas,
   iframe,
@@ -65,49 +65,49 @@
   video {
     vertical-align: middle;
   }
-  
+
   /*
    * Remove default fieldset styles.
    */
-  
+
   fieldset {
     border: 0;
     margin: 0;
     padding: 0;
   }
-  
+
   /*
    * Allow only vertical resizing of textareas.
    */
-  
+
   textarea {
     resize: vertical;
   }
-  
+
   /* ==========================================================================
      Browser Upgrade Prompt
      ========================================================================== */
-  
+
   .browserupgrade {
     margin: 0.2em 0;
     background: #ccc;
     color: #000;
     padding: 0.2em 0;
   }
-  
+
   /* ==========================================================================
      Author's custom styles
      ========================================================================== */
-  
+
   .bruno {
     width: 100%;
     background-color: #981414;
-    height: 150px;
+    height: 182px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
+
   .herobanner {
     background-color: #ECA823;
     width: 100%;
@@ -115,39 +115,61 @@
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .herobanner img {
     margin: 15px;
   }
-  
+
   .bruno h1 {
     color: #fff;
     font-size: 64px;
     font-family: 'Anton', sans-serif;
   }
-  
+
   .about {
     width: 100%;
-    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
     background-image: url('../img/hero1.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-  
+
   .leftsidebar,
   .rightsidebar {
     width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
   }
-  
+
+/* added the styles for leftsidebarheader to allow for the column of materials to flow down */
+  .leftsidebarheader{
+    background-color: #981414;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+
+/* added the random horizontal bar needed for leftsidebar */
+  .horizontalbar{
+    background-color: #981414;
+    height: 50px;
+    width: 100%;
+  }
+
+  .leftsidebarheader h1{
+    color: #fff;
+  }
+
   .maincontent {
     width: 60%;
     display: flex;
@@ -155,23 +177,41 @@
     align-items: center;
     flex-direction: column;
   }
-  
+
   .maincontent p {
     color: #fff;
-    font-size: 10px;
+    font-size: 18px;
     font-family: 'Anton', sans-serif;
   }
-  
+
   .about h1 {
     color: #fff;
     font-size: 24px;
     font-family: 'Anton', sans-serif;
   }
-  
+
+/* added table styles */
+ table{
+   width: 90%;
+   color: #fff;
+   font-family: 'Anton', sans-serif;
+ }
+
+ tr{
+   margin: 5px;
+   padding: 2px;
+   font-size: 18px;
+ }
+
+td{
+  margin: 5px;
+  padding: 2px;
+  font-size: 18px;
+}
+
   .tour {
     width: 100%;
     background-color: #ECA823;
-    height: 400px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -180,17 +220,17 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-  
+
   .tour h1 {
     color: #fff;
-    font-size: 24px;
+    font-size: 20px;
     font-family: 'Anton', sans-serif;
   }
-  
+
+
   .testimonials {
     width: 100%;
     background-color: #1D1B1B;
-    height: 400px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -200,66 +240,58 @@
     background-size: cover;
   }
 
+  .tourdates {
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Anton', sans-serif;
+}
+
+
+/* Fixed up the hero sections so the color background touch each section as in your design */
   .hero_one{
     background-color: rgba(121, 23, 23, 0.78);
+    height: 100%;
+    padding: 15px;
   }
   .hero_two{
     background-color: rgba(238, 175, 14, 0.65);
+    height: 100%;
+    padding: 15px;
   }
   .hero_three{
     background-color: rgba(0,0,0,0.65);
+    height: 100%;
+    padding: 15px;
   }
-  
+
   .testimonials h1 {
     color: #fff;
     font-size: 24px;
     font-family: 'Anton', sans-serif;
   }
-  
-  .leftsidebar,
-  .rightsidebar {
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-  }
-  
-  .maincontent {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .maincontent p {
-    color: #fff;
-    font-size: 10px;
-    font-family: 'Anton', sans-serif;
-  }
-  
+
+
   footer {
     width: 100%;
     background-color: #981414;
-    height: 41px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-content: center;
   }
-  
+
   /* ==========================================================================
      Helper classes
      ========================================================================== */
-  
+
   /*
    * Hide visually and from screen readers
    */
-  
+
   .hidden {
     display: none !important;
   }
-  
+
   /*
   * Hide only visually, but have it available for screen readers:
   * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
@@ -268,7 +300,7 @@
   *    causes content to wrap 1 word per line:
   *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
   */
-  
+
   .sr-only {
     border: 0;
     clip: rect(0, 0, 0, 0);
@@ -281,13 +313,13 @@
     width: 1px;
     /* 1 */
   }
-  
+
   /*
   * Extends the .sr-only class to allow the element
   * to be focusable when navigated to via the keyboard:
   * https://www.drupal.org/node/897638
   */
-  
+
   .sr-only.focusable:active,
   .sr-only.focusable:focus {
     clip: auto;
@@ -298,27 +330,16 @@
     white-space: inherit;
     width: auto;
   }
-  
+
   /*
   * Hide visually and from screen readers, but maintain layout
   */
-  
+
   .invisible {
     visibility: hidden;
   }
-  
-  /*
-  * Clearfix: contain floats
-  *
-  * For modern browsers
-  * 1. The space content is one way to avoid an Opera bug when the
-  *    `contenteditable` attribute is included anywhere else in the document.
-  *    Otherwise it causes space to appear at the top and bottom of elements
-  *    that receive the `clearfix` class.
-  * 2. The use of `table` rather than `block` is only necessary if using
-  *    `:before` to contain the top-margins of child elements.
-  */
-  
+
+
   .clearfix:before,
   .clearfix:after {
     content: " ";
@@ -326,34 +347,34 @@
     display: table;
     /* 2 */
   }
-  
+
   .clearfix:after {
     clear: both;
   }
-  
+
   /* ==========================================================================
      EXAMPLE Media Queries for Responsive Design.
      These examples override the primary ('mobile first') styles.
      Modify as content requires.
      ========================================================================== */
-  
+
   @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
   }
-  
+
   @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
   (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
   }
-  
+
   /* ==========================================================================
      Print styles.
      Inlined to avoid the additional HTTP request:
      https://www.phpied.com/delay-loading-your-print-css/
      ========================================================================== */
-  
+
   @media print {
     *,
     *:before,
