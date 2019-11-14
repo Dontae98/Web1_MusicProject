@@ -122,8 +122,9 @@
 
   .bruno h1 {
     color: #fff;
-    font-size: 64px;
+    font-size: 100px;
     font-family: 'Anton', sans-serif;
+    text-shadow: 4px 5px #000;
   }
 
   .about {
@@ -182,12 +183,14 @@
     color: #fff;
     font-size: 18px;
     font-family: 'Anton', sans-serif;
+    text-shadow: 4px 5px #000;
   }
 
   .about h1 {
     color: #fff;
-    font-size: 24px;
+    font-size: 25px;
     font-family: 'Anton', sans-serif;
+    text-shadow: 4px 5px #000;
   }
 
 /* added table styles */
@@ -195,6 +198,7 @@
    width: 90%;
    color: #fff;
    font-family: 'Anton', sans-serif;
+   text-shadow: 4px 5px #000;
  }
 
  tr{
@@ -223,8 +227,9 @@ td{
 
   .tour h1 {
     color: #fff;
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Anton', sans-serif;
+    text-shadow: 4px 5px #000;
   }
 
 
@@ -242,7 +247,7 @@ td{
 
   .tourdates {
     color: #fff;
-    font-size: 24px;
+    font-size: 25px;
     font-family: 'Anton', sans-serif;
 }
 
@@ -266,8 +271,9 @@ td{
 
   .testimonials h1 {
     color: #fff;
-    font-size: 24px;
+    font-size: 25px;
     font-family: 'Anton', sans-serif;
+    text-shadow: 4px 5px #000;
   }
 
 
