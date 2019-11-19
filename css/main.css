@@ -122,7 +122,7 @@
 
   .bruno h1 {
     color: #fff;
-    font-size: 100px;
+    font-size: 130px;
     font-family: 'Anton', sans-serif;
     text-shadow: 4px 5px #000;
   }
@@ -149,7 +149,6 @@
 
 /* added the styles for leftsidebarheader to allow for the column of materials to flow down */
   .leftsidebarheader{
-    background-color: #981414;
     height: 50px;
     width: 100%;
     display: flex;
@@ -159,10 +158,22 @@
     margin: 0 auto;
   }
 
+  .burgundy{
+      background-color: #981414;
+  }
+
+  .yellow{
+      background-color: #ECA823;
+  }
+
+  .gray{
+      background-color: #1D1B1B;
+  }
+
+
 
 /* added the random horizontal bar needed for leftsidebar */
   .horizontalbar{
-    background-color: #981414;
     height: 50px;
     width: 100%;
   }
