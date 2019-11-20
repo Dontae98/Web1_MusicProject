@@ -16,6 +16,7 @@
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    overflow-x: hidden;
   }
 
   /*
@@ -102,7 +103,7 @@
   .bruno {
     width: 100%;
     background-color: #981414;
-    height: 150px;
+    height: 182px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -122,17 +123,16 @@
 
   .bruno h1 {
     color: #fff;
-    font-size: 64px;
+    font-size: 130px;
     font-family: 'Anton', sans-serif;
+    text-shadow: 4px 5px #000;
   }
 
   .about {
     width: 100%;
-    height: 415px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
     background-image: url('../img/hero1.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -143,9 +143,43 @@
   .rightsidebar {
     width: 20%;
     display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+/* added the styles for leftsidebarheader to allow for the column of materials to flow down */
+  .leftsidebarheader{
+    height: 50px;
+    width: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    margin: 0 auto;
+  }
+
+  .burgundy{
+      background-color: #981414;
+  }
+
+  .yellow{
+      background-color: #ECA823;
+  }
+
+  .gray{
+      background-color: #1D1B1B;
+  }
+
+
+
+/* added the random horizontal bar needed for leftsidebar */
+  .horizontalbar{
+    height: 50px;
+    width: 100%;
+  }
+
+  .leftsidebarheader h1{
+    color: #fff;
   }
 
   .maincontent {
@@ -158,25 +192,41 @@
 
   .maincontent p {
     color: #fff;
-    font-size: 10px;
+    font-size: 18px;
     font-family: 'Anton', sans-serif;
+    text-shadow: 4px 5px #000;
   }
 
   .about h1 {
     color: #fff;
-    font-size: 24px;
+    font-size: 25px;
     font-family: 'Anton', sans-serif;
+    text-shadow: 4px 5px #000;
   }
 
- .table{
+/* added table styles */
+ table{
+   width: 90%;
    color: #fff;
-   font-size: 10px;
    font-family: 'Anton', sans-serif;
+   text-shadow: 4px 5px #000;
  }
+
+ tr{
+   margin: 5px;
+   padding: 2px;
+   font-size: 18px;
+ }
+
+td{
+  margin: 5px;
+  padding: 2px;
+  font-size: 18px;
+}
+
   .tour {
     width: 100%;
     background-color: #ECA823;
-    height: 400px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -188,15 +238,15 @@
 
   .tour h1 {
     color: #fff;
-    font-size: 24px;
+    font-size: 25px;
     font-family: 'Anton', sans-serif;
+    text-shadow: 4px 5px #000;
   }
 
 
   .testimonials {
     width: 100%;
     background-color: #1D1B1B;
-    height: 400px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -208,53 +258,40 @@
 
   .tourdates {
     color: #fff;
-    font-size: 24px;
+    font-size: 25px;
     font-family: 'Anton', sans-serif;
 }
 
+
+/* Fixed up the hero sections so the color background touch each section as in your design */
   .hero_one{
     background-color: rgba(121, 23, 23, 0.78);
+    height: 100%;
+    padding: 15px;
   }
   .hero_two{
     background-color: rgba(238, 175, 14, 0.65);
+    height: 100%;
+    padding: 15px;
   }
   .hero_three{
     background-color: rgba(0,0,0,0.65);
+    height: 100%;
+    padding: 15px;
   }
 
   .testimonials h1 {
     color: #fff;
-    font-size: 24px;
+    font-size: 25px;
     font-family: 'Anton', sans-serif;
+    text-shadow: 4px 5px #000;
   }
 
-  .leftsidebar,
-  .rightsidebar {
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-  }
-
-  .maincontent {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .maincontent p {
-    color: #fff;
-    font-size: 15px;
-    font-family: 'Anton', sans-serif;
-  }
 
   footer {
     width: 100%;
     background-color: #981414;
-    height: 41px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -319,17 +356,6 @@
     visibility: hidden;
   }
 
-  /*
-  * Clearfix: contain floats
-  *
-  * For modern browsers
-  * 1. The space content is one way to avoid an Opera bug when the
-  *    `contenteditable` attribute is included anywhere else in the document.
-  *    Otherwise it causes space to appear at the top and bottom of elements
-  *    that receive the `clearfix` class.
-  * 2. The use of `table` rather than `block` is only necessary if using
-  *    `:before` to contain the top-margins of child elements.
-  */
 
   .clearfix:before,
   .clearfix:after {
@@ -349,9 +375,71 @@
      Modify as content requires.
      ========================================================================== */
 
-  @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+ /* On screens that are 900px wide or less */
+@media screen and (max-width: 900px) {
+
+  .herobanner img{
+    width: 120px;
   }
+
+  .about,
+  .tour,
+  .testimonials{
+    flex-direction: column;
+    width: 100%;
+}
+
+.maincontent{
+  width: 100%;
+}
+
+.maincontent p{
+  width: 80%;
+}
+
+.leftsidebar{
+  width: 100%;
+}
+
+.leftsidebar img{
+  display: none;
+}
+
+.rightsidebar{
+  display: none;
+  width: 100%;
+}
+.horizontalbar{
+  display: none;
+}
+}
+/* On screens that are 768px wide or less */
+@media screen and (max-width: 768px) {
+
+  .bruno h1{
+    font-size: 90px;
+  }
+
+  .herobanner img{
+    width: 90px;
+  }
+  
+}
+
+/* On screens that are 550px wide or less */
+@media screen and (max-width: 550px) {
+  
+}
+
+/* On screens that are 450px wide or less */
+@media screen and (max-width: 450px) {
+  
+}
+
+/* On screens that are 300px wide or less */
+@media screen and (max-width: 300px) {
+  
+}
 
   @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
