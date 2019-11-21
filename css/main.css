@@ -421,24 +421,34 @@ td{
   }
 
   .herobanner img{
-    width: 90px;
+    height:	111px;
+    width: 90x;
   }
-  
+
 }
 
 /* On screens that are 550px wide or less */
 @media screen and (max-width: 550px) {
-  
+
+  .bruno h1{
+    font-size: 80px;
+  }
+
+  .herobanner img{
+    height:	90px;
+    width: 70px;
+  }
+
 }
 
 /* On screens that are 450px wide or less */
 @media screen and (max-width: 450px) {
-  
+
 }
 
 /* On screens that are 300px wide or less */
 @media screen and (max-width: 300px) {
-  
+
 }
 
   @media print,
